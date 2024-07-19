@@ -1,25 +1,12 @@
+---
+title: Home
+---
+
 # AlpacAI
 
 <p align=center>
 <img src="https://github.com/zennur/ConversationalAI_SDV/assets/7806017/abd3d0f3-c75c-47e3-ab3c-1b06aa6f8a7d" width="50%" style="border-radius:8%"/>
 </p>
-
-## Table of Content
-
-- [AlpacAI](#alpacai)
-  - [Table of Content](#table-of-content)
-  - [Problem Statement](#problem-statement)
-  - [Vision](#vision)
-  - [Future Directions](#future-directions)
-  - [Conceptual System Architecture](#conceptual-system-architecture)
-  - [Prerequistes](#prerequistes)
-    - [General](#general)
-    - [Development](#development)
-  - [Installation](#installation)
-    - [Environment](#environment)
-    - [Application](#application)
-  - [Usage](#usage)
-  - [License](#license)
 
 ## Problem Statement
 
@@ -35,7 +22,7 @@ The project envisions expanding its capabilities to include predictive accident 
 ## Conceptual System Architecture
 
 <p align=center>
-<img src="docs/_assets/img/architecture.png" width="90%"/>
+<img src="_assets/img/architecture.png" width="80%"/>
 </p>
 
 
