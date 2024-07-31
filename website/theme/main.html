@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+  <div class="md-content" style="max-width: none; margin: 0; padding: 0;">
+    <article class="md-content__inner md-typeset" style="max-width: none; margin: 0; padding: 0;">
+      {{ page.content }}
+    </article>
+  </div>
+{% endblock %}
+
+{% block site_nav %}
+{% endblock %}
+
+{% block content_wrapper %}
+  <div class="md-content" style="max-width: none; margin: 0; padding: 0;">
+    <article class="md-content__inner md-typeset" style="max-width: none; margin: 0; padding: 0;">
+      {{ page.content }}
+    </article>
+  </div>
+{% endblock %}

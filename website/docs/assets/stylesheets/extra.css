@@ -1,0 +1,54 @@
+/* Global reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Hide sidebars */
+  .md-sidebar--primary,
+  .md-sidebar--secondary {
+    display: none !important;
+  }
+  
+  /* Full width content */
+  .md-main__inner,
+  .md-content__inner,
+  .md-content,
+  .md-typeset {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+  
+  /* Adjust header */
+  .md-header {
+    position: absolute;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .md-header__inner {
+    padding-left: 0;
+  }
+  
+  /* Remove any remaining max-width limitations */
+  .md-grid,
+  .md-container,
+  .md-main {
+    max-width: none !important;
+    width: 100% !important;
+  }
+  
+  /* Ensure full viewport height */
+  .md-main__inner {
+    min-height: 100vh;
+  }
+  
+  /* Remove extra spacing */
+  .md-content__inner:before {
+    display: none;
+  }
