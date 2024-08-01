@@ -165,3 +165,7 @@ cython_debug/
 #*.json
 .DS_Store
 *.pyc
+
+# ROS2 things, no build artifacts should be uploaded to git
+build/
+install/
