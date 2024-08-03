@@ -48,6 +48,10 @@ The *conversation agent* is designed to interact with the driver during the driv
 4. Annoy Until You Obey  
    The system activates acoustic alerts, such as vibrating the steering wheel or emitting beeping sounds, to ensure driver compliance.
 
+<div markdown="span" sytle="justify-content: center; display: flex">
+    ![](../../../_assets/img/engagement_states.drawio.svg)
+</div>
+
 ### Middleware
 
 The middleware is responsible for maintaining the communication between different systems. 
