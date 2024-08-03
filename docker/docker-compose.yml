@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   base:
     build:
@@ -8,6 +6,8 @@ services:
       target: base
     platform: linux/amd64
     container_name: alpacai-base
+    volumes:
+      - ../:/home/alpaca/workspace
 
   extended:
     build:
