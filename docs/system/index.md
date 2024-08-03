@@ -8,7 +8,7 @@ Furthermore, we will guide you through the seamless integration and effortless d
 
 <div class="grid cards" markdown>
 
--   :material-remote-desktop:{ .lg .middle } [__System Architecture__](architecture/system-architecture.md)
+-   :material-remote-desktop:{ .lg .middle } [__System Architecture__](architecture/System-Architecture/index.md)
 
     ---
 
