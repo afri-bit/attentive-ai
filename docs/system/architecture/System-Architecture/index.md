@@ -18,11 +18,11 @@ For a high-level overview of our system, please refer to the following diagram.
 
 ## Basic Idea
 
-Let's break down the architecture into different sections, so you can have the idea why we designed this architecture at the first place.
+Let's break down the architecture into different sections to provide a clear understanding of why we designed it this way initially.
 
 ### Core Purpose
 
-In this section, let's focus on the *yellow* part of the architecture. We call this the **core** purpose of the whole system.
+In this section, let's focus on the yellow part of the architecture, which we refer to as the **core** purpose of the entire system.
 
 <br/>
 <div markdown="span" sytle="justify-content: center; display: flex">
@@ -30,22 +30,23 @@ In this section, let's focus on the *yellow* part of the architecture. We call t
 </div>
 <br/>
 
-This specific construction has a strong relation with the *core* value of **AlpacAI** system. So what do we see in this in this picture?  
-Since we want to make the driving experience a safe place for the driver itself, we want to detect the driver drowsiness level using the camera detection approach. The result of the detection will be sent to the middleware system for further processing. Based on this result and other information, the decision maker function component will decide the activation of the conversation agent.
+This specific construction is closely tied to the *core* value of the **AlpacAI** system. So, what do we see in this picture?
 
-The *conversation agent* has the main purpose to interact with the driver during the driving to increase driver attention during driving time. It has different stages to interact with the driver based on the driver attention level during driving
+To ensure a safe driving experience, we aim to detect driver drowsiness using a camera detection approach. The results of this detection are sent to the middleware system for further processing. Based on these results and other information, the decision-making function component determines the activation of the conversation agent.
+
+The *conversation agent* is designed to interact with the driver during the drive to enhance their attention. It engages the driver through different stages based on their attention level:
 
 1. Joyful Ride - Entertainment  
-   In this stage the entertainment system will be turned on automatically, so the driver has a joyful ride while listening to music, radio or even podcast.
+   In this stage, the entertainment system is activated automatically, providing a pleasant experience with music, radio, or podcasts.
 
 2. Knowledgeful Ride  
-   Based on the location of the driver / vehicle, the conversation agent will engage a conversation with the driver by asking different type of questions, and the system will expect an answer from the driver within certain amount of time frame. 
+   Leveraging the vehicle's location, the conversation agent engages the driver with various questions, expecting responses within a certain timeframe.
 
 3. Need Your Attention  
-   This stage has similar behaviour as the previous stage, but the conversation will expect response from the driver within shorter time frame. 
+   Similar to the previous stage, but with a shorter response time expected from the driver.
 
 4. Annoy Until You Obey  
-   The system will start to activate the acoustic engagement with the driver, e.g. vibrating steering wheel, beeping sound, etc. 
+   The system activates acoustic alerts, such as vibrating the steering wheel or emitting beeping sounds, to ensure driver compliance.
 
 ### Middleware
 
@@ -54,7 +55,7 @@ The middleware is responsible for maintaining the communication between differen
 
 ### Vehicle Information
 
-The vehicle information is crucial for the decision maker function component. This determined how the whole system behaves.
+The vehicle information is crucial for the decision-making function component, as it determines how the entire system operates.
 
 <br/>
 <div markdown="span" sytle="justify-content: center; display: flex">
@@ -62,10 +63,10 @@ The vehicle information is crucial for the decision maker function component. Th
 </div>
 <br/>
 
-The main information, that will be retreived from the vehicle, are the location of the vehicle and vehicle speed.
+The primary information retrieved from the vehicle includes its location and speed.
 
 * Vehicle Location  
-  With vehicle location, the conversation agent will gather information from surrounding area to start a conversation with the driver. The conversation can be a form of knowledgeful question, such as question about famous / historic building from the surrounding area, or any other interesting topic about specific area.
+  Using the vehicle's location, the conversational agent will gather information about the surrounding area to initiate a conversation with the driver. This interaction can involve insightful questions about famous or historic buildings nearby or any other interesting topics related to the specific area.
 
 * Vehicle Speed  
-  This information will determine the minimum limit of vehicle speed to activate the conversation agent.
+  This data will be used to set the minimum speed threshold required to activate the conversational agent.
