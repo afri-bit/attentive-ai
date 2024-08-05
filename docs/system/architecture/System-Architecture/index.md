@@ -11,7 +11,6 @@ The **AlpacAI** system originated from a hackathon event, necessitating the arch
 
 For a high-level overview of our system, please refer to the following diagram.
 
-<br/>
 <div markdown="span" sytle="justify-content: center; display: flex;">
     ![](../../../_assets/img/system_architecture.drawio.svg)
 </div>
@@ -24,11 +23,9 @@ Let's break down the architecture into different sections to provide a clear und
 
 In this section, let's focus on the yellow part of the architecture, which we refer to as the **core** purpose of the entire system.
 
-<br/>
 <div markdown="span" sytle="justify-content: center; display: flex">
     ![](../../../_assets/img/system_architecture_yellow.drawio.svg)
 </div>
-<br/>
 
 This specific construction is closely tied to the *core* value of the **AlpacAI** system. So, what do we see in this picture?
 
@@ -61,11 +58,9 @@ The middleware is responsible for maintaining the communication between differen
 
 The vehicle information is crucial for the decision-making function component, as it determines how the entire system operates.
 
-<br/>
 <div markdown="span" sytle="justify-content: center; display: flex">
     ![](../../../_assets/img/system_architecture_vehicle.drawio.svg)
 </div>
-<br/>
 
 The primary information retrieved from the vehicle includes its location and speed.
 
