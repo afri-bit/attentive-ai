@@ -11,6 +11,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/afri-bit/AlpacAI/insides/problem-statement/</loc>
+         <lastmod>2024-08-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/afri-bit/AlpacAI/insides/vision/</loc>
+         <lastmod>2024-08-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/afri-bit/AlpacAI/insides/who-we-are/</loc>
+         <lastmod>2024-08-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/afri-bit/AlpacAI/system/</loc>
          <lastmod>2024-08-05</lastmod>
          <changefreq>daily</changefreq>
