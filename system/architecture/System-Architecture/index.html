@@ -733,7 +733,6 @@
 </div>
 <p>The <strong>AlpacAI</strong> system originated from a hackathon event, necessitating the architecture to be designed within a rigorous 2 to 2.5-days development timeframe. Consequently, we aimed for simplicity in our architectural approach while ensuring that it remained innovative and cutting-edge.</p>
 <p>For a high-level overview of our system, please refer to the following diagram.</p>
-<p><br/></p>
 <div sytle="justify-content: center; display: flex;">
     <img alt="" src="../../../_assets/img/system_architecture.drawio.svg" />
 </div>
@@ -741,11 +740,9 @@
 <p>Let's break down the architecture into different sections to provide a clear understanding of why we designed it this way initially.</p>
 <h3 id="core-purpose">Core Purpose</h3>
 <p>In this section, let's focus on the yellow part of the architecture, which we refer to as the <strong>core</strong> purpose of the entire system.</p>
-<p><br/></p>
 <div sytle="justify-content: center; display: flex">
     <img alt="" src="../../../_assets/img/system_architecture_yellow.drawio.svg" />
 </div>
-<p><br/></p>
 <p>This specific construction is closely tied to the <em>core</em> value of the <strong>AlpacAI</strong> system. So, what do we see in this picture?</p>
 <p>To ensure a safe driving experience, we aim to detect driver drowsiness using a camera detection approach. The results of this detection are sent to the middleware system for further processing. Based on these results and other information, the decision-making function component determines the activation of the conversation agent.</p>
 <p>The <em>conversation agent</em> is designed to interact with the driver during the drive to enhance their attention. It engages the driver through different stages based on their attention level:</p>
@@ -774,11 +771,9 @@
 <p>The middleware is responsible for maintaining the communication between different systems. </p>
 <h3 id="vehicle-information">Vehicle Information</h3>
 <p>The vehicle information is crucial for the decision-making function component, as it determines how the entire system operates.</p>
-<p><br/></p>
 <div sytle="justify-content: center; display: flex">
     <img alt="" src="../../../_assets/img/system_architecture_vehicle.drawio.svg" />
 </div>
-<p><br/></p>
 <p>The primary information retrieved from the vehicle includes its location and speed.</p>
 <ul>
 <li>
