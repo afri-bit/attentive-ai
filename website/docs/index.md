@@ -110,8 +110,6 @@
   }
 </style>
 
-<!-- Your existing HTML content here -->
-
 <section id="hero">
   <div class="content">
     <h2>Welcome to AlpacAI</h2>

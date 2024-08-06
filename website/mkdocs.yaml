@@ -1,7 +1,7 @@
 site_name: AlpacAI
 theme:
   name: material
-  custom_dir: theme
+  custom_dir: custom-templates
   features:
     - navigation.tabs
     - navigation.sections
@@ -35,13 +35,17 @@ nav:
   - Usage: usage.md
   - API Reference: api-reference.md
   - Contributing: contributing.md
-  - License: license.md
 
 extra_css:
-  - stylesheets/extra.css
+  # - stylesheets/extra.css
+  - css/style.css
 
 markdown_extensions:
   - md_in_html
 
 plugins:
   - search
+
+theme:
+  name: material
+  custom_dir: custom-templates
