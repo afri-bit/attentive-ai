@@ -1,0 +1,6 @@
+launch:
+- node:
+    pkg: "drowsiness_detection"
+    exec: "talker"
+    name: "some_talker"
+    namespace: "dd"
