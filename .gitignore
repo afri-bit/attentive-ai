@@ -169,3 +169,4 @@ cython_debug/
 # ROS2 things, no build artifacts should be uploaded to git
 build/
 install/
+log/
