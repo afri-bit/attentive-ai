@@ -8,11 +8,16 @@ html, body {
   }
   
   /* Hide sidebars */
+  .md-sidebar,
   .md-sidebar--primary,
   .md-sidebar--secondary {
     display: none !important;
   }
-  
+
+  .md-typeset h1 {
+    display: none !important;
+  }
+
   /* Full width content */
   .md-main__inner,
   .md-content__inner,
@@ -29,10 +34,6 @@ html, body {
     position: absolute;
     background-color: transparent;
     box-shadow: none;
-  }
-  
-  .md-header__inner {
-    padding-left: 0;
   }
   
   /* Remove any remaining max-width limitations */

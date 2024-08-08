@@ -1,21 +1,272 @@
 {% extends "base.html" %}
+{% block header %}
+<nav class="md-header__inner md-grid" aria-label="Header">
+  <a href="." title="AlpacAI" class="md-header__button md-logo" aria-label="AlpacAI" data-md-component="logo">
+    
 
-{% block content %}
-  {{ super() }}
-  <div class="md-content" style="max-width: none; margin: 0; padding: 0;">
-    <article class="md-content__inner md-typeset" style="max-width: none; margin: 0; padding: 0;">
-      {{ page.content }}
-    </article>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+
+  </a>
+  <label class="md-header__button md-icon" for="__drawer">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+  </label>
+  <div class="md-header__title" data-md-component="header-title">
+    <div class="md-header__ellipsis">
+      <div class="md-header__topic">
+        <span class="md-ellipsis">
+          AlpacAI
+        </span>
+      </div>
+      <div class="md-header__topic" data-md-component="header-topic">
+        <span class="md-ellipsis">
+          
+            Home
+          
+        </span>
+      </div>
+    </div>
   </div>
-{% endblock %}
+  
+    
+      <form class="md-header__option" data-md-component="palette">
 
-{% block site_nav %}
-{% endblock %}
+  
+  
+  
+  <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+  
+    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+    </label>
+  
 
-{% block content_wrapper %}
-  <div class="md-content" style="max-width: none; margin: 0; padding: 0;">
-    <article class="md-content__inner md-typeset" style="max-width: none; margin: 0; padding: 0;">
-      {{ page.content }}
-    </article>
+  
+  
+  
+  <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+  
+    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+    </label>
+  
+
+</form>
+    
+  
+  
+    <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+  
+  
+  
+    <label class="md-header__button md-icon" for="__search">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+    </label>
+    <div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+  <form class="md-search__form" name="search">
+    <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+    <label class="md-search__icon md-icon" for="__search">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+    </label>
+    <nav class="md-search__options" aria-label="Search">
+      
+      <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+      </button>
+    </nav>
+    
+      <div class="md-search__suggest" data-md-component="search-suggest"></div>
+    
+  </form>
+  <div class="md-search__output">
+    <div class="md-search__scrollwrap" tabindex="0">
+      <div class="md-search-result" data-md-component="search-result">
+        <div class="md-search-result__meta">Type to start searching</div>
+        <ol class="md-search-result__list" role="presentation"></ol>
+      </div>
+    </div>
   </div>
-{% endblock %}
+</div>
+</div>
+  
+  
+</nav>
+
+<style>
+    /* Reset some default styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    
+    /* Ensure full width content */
+    .md-content__inner {
+      margin: 0 !important;
+      max-width: none !important;
+      padding: 0 !important;
+    }
+  
+    section {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      box-sizing: border-box;
+    }
+  
+    .content {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      padding: 2rem;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      color: white;
+    }
+    #hero {
+      background-image: url('assets/images/alpaca_bg.png');
+    }
+    #features {
+      background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    }
+    #vision {
+      background-image: url('https://images.unsplash.com/photo-1535868463750-c78d9543614f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    }
+    #problem-statement {
+      background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    }
+  
+    h1, h2 {
+      color: #FFFFFF;
+    }
+  
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .md-button {
+      display: inline-block;
+      padding: 0.7em 1.5em;
+      text-decoration: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      font-weight: bold;
+    }
+  
+    .md-button:hover {
+      background-color: #2980b9;
+    }
+  
+    .md-button--primary {
+      background-color: #e74c3c;
+    }
+  
+    .md-button--primary:hover {
+      background-color: #c0392b;
+    }
+  
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .feature-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+  
+    @media (max-width: 768px) {
+      section {
+        padding: 1rem;
+      }
+      .content {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+{% endblock %} 
+  <section id="hero">
+    <div class="content">
+      <h2>Welcome to AlpacAI</h2>
+      <p>AlpacAI represents a cutting-edge integration of AI technologies with automotive safety systems, designed to redefine the driving experience. Our mission is to make driving safer, more enjoyable, and more intelligent through the power of artificial intelligence.</p>
+      <div class="cta-buttons">
+        <a href="{{ 'installation/prerequisites/' | url }}" class="md-button md-button--primary">Get Started with Installation</a>
+        <a href="{{ 'vision/' | url }}" class="md-button">Learn More About Our Vision</a>
+      </div>
+    </div>
+  </section>
+  
+  <section id="features">
+    <div class="content">
+      <h2>Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>Advanced Driver Monitoring</h3>
+          <p>Leveraging computer vision to ensure driver attentiveness.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Interactive Assistance</h3>
+          <p>Natural language processing for intuitive driver communication.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Predictive Accident Avoidance</h3>
+          <p>Machine learning algorithms to anticipate and prevent potential accidents.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Smart City Integration</h3>
+          <p>Connecting with urban infrastructure for optimized routing and enhanced safety.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="vision">
+    <div class="content">
+      <h2>Our Vision</h2>
+      <p>At AlpacAI, we envision a future where driving is not just safer, but also more enjoyable and seamlessly integrated with artificial intelligence. We're driving towards a future where every journey is safe, efficient, and enjoyable, powered by the intelligent fusion of human insight and artificial intelligence.</p>
+      <div class="cta-buttons">
+        <a href="{{ 'vision/' | url }}" class="md-button md-button--primary">Explore Our Full Vision</a>
+      </div>
+    </div>
+  </section>
+  
+  <section id="problem-statement">
+    <div class="content">
+      <h2>Problem Statement</h2>
+      <p>AlpacAI addresses critical issues in automotive safety:</p>
+      <ul>
+        <li>Driver distraction and fatigue remain leading causes of road accidents.</li>
+        <li>Information overload from multiple vehicle systems can itself become a source of distraction.</li>
+        <li>Many current safety systems are reactive rather than proactive.</li>
+        <li>There's untapped potential in using AI to create more intelligent, adaptive, and personalized safety systems.</li>
+      </ul>
+      <div class="cta-buttons">
+        <a href="{{ 'problem-statement/' | url }}" class="md-button md-button--primary">Read Full Problem Statement</a>
+      </div>
+    </div>
+  </section>
