@@ -168,3 +168,6 @@ cython_debug/
 
 # Website: generated content
 website/site/
+# ROS2 things, no build artifacts should be uploaded to git
+build/
+install/

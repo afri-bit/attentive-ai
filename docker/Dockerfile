@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:22.04 as base
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -15,7 +15,6 @@ RUN apt update \
     build-essential \
     python3 \
     python3-pip \
-    neovim \
     vim \
     nano \
     net-tools \
@@ -36,10 +35,10 @@ RUN add-apt-repository universe \
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null 
 
 RUN apt update \
-    &&  apt install -y \
-    ros-dev-tools \
-    ros-iron-ros-base
-    
+    && apt install -y \
+       ros-dev-tools \
+       ros-iron-desktop \
+       python3-rosdep
 
 # ========== User level
 
@@ -56,22 +55,17 @@ WORKDIR /home/${USER_NAME}
 # Update the pip version
 RUN pip install --upgrade pip
 
-
 # Setup ROS environment
 RUN echo 'source /opt/ros/iron/setup.sh' >> $HOME/.bashrc
 
-# ========== RUST Things (with ROS2) - USER level
+FROM base as convagent
 
-# Install rust 
-RUN curl https://sh.rustup.rs -sSf | sh -s -- -y \
-    && echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
+USER root
 
-RUN $HOME/.cargo/bin/cargo install cargo-ament-build  # --debug is faster to install
+# ========== Convagent Setup
+RUN apt update \
+    && apt install -y espeak ffmpeg libespeak1
 
-# Cargo for ROS2
-RUN pip install git+https://github.com/colcon/colcon-cargo.git \
-    && pip install git+https://github.com/colcon/colcon-ros-cargo.git
+USER ${USER_NAME}
 
-# Convagent Setup
-RUN sudo apt update && sudo apt install espeak ffmpeg libespeak1 -y
 RUN pip install ollama
