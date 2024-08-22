@@ -56,6 +56,12 @@
     color: #FFFFFF;
   }
 
+  ul {
+    text-align: left;
+    margin: auto%;
+    padding-left: 40%;
+  }
+
   .cta-buttons {
     display: flex;
     justify-content: center;
